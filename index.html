@@ -1,1 +1,94 @@
-Hello World!
+<!-- Jason Boyce -->
+<!-- COMP 322, Section 001 -->
+<!-- 9/4/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <style>
+        body {
+          font-family: Garamond, serif;
+          margin: 0;
+          padding: 0;
+          background-color: #fafafa;
+        }
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          line-height: 1.6;
+          text-align: left;
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+        }
+        h1 {
+          text-align: center;
+          margin: 0 auto 20px auto;
+        }
+        img {
+          display: block;
+          margin: 0 auto 20px auto;
+          max-width: 100%;   /* ✅ keeps image inside container */
+          height: auto;      /* ✅ keeps aspect ratio */
+          border-radius: 10px;
+        }
+        h2 {
+          text-align: center;
+        }
+        ul {
+          list-style-position: inside;
+          padding: 0;
+          margin: 0 auto;
+          display: table;
+          text-align: left;
+        }
+        a {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+          color: #2980b9;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome Page</h1>
+
+    <!-- welcome page photo -->
+    <img src="img/img3.jpg" alt="Profile photo of Jason Boyce" />
+
+    <!-- short bio -->
+    <p>
+        My name is Jason Boyce. I am a Junior Computer Science Student at
+        North Carolina A&T State University. In my free time, I like to play video games,
+        read books (mythology specifically), and watch movies. I chose Computer Science as my major because I
+        felt of the opportunity to expand my coding knowledge.
+    </p>
+
+    <!-- course list -->
+    <h2>My Fall 2025 Courses</h2>
+    <ul>
+        <li>MGMT 110, Business Environment</li>
+        <li>MATH 351, Linear Algebra & Matrix Theory</li>
+        <li>ECEN 375, Computer Architecture</li>
+        <li>COMP 360, Programming Languages</li>
+        <li>COMP 322, Internet Systems</li>
+    </ul>
+
+    <!-- link to introduction page -->
+    <a href="introduction.html">Go to the Introduction Page →</a>
+
+    <!-- link to little prince -->
+    <a href="little_prince.html">Go to the Little Prince Page →</a>
+</div>
+</body>
+</html>
+
+
