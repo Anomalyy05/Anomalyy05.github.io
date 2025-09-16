@@ -6,19 +6,24 @@ document.write("<table>");
 document.write("<tr><th>Number 1</th><th>Operator</th><th>Number 2</th><th>Result</th></tr>");
 
 while (true) {
-  // Prompt for first number
+  // Ask for first number
   let x = prompt("Enter the first number (Cancel to quit):");
-  if (x === null) break; // Exit loop if Cancel
+  if (x === null) break;
+
+  // Ask for second number
   let y = prompt("Enter the second number:");
   if (y === null) break;
+
+  // Ask for operator
   let operator = prompt("Enter operator (+, -, *, /, %):");
   if (operator === null) break;
 
+  // Convert to numbers
   let num1 = parseFloat(x);
   let num2 = parseFloat(y);
   let result;
 
-  // Validate inputs
+  // Validate input
   if (isNaN(num1) || isNaN(num2)) {
     result = "<span class='error'>Error: Invalid number</span>";
   } else {
@@ -56,16 +61,16 @@ while (true) {
     }
   }
 
-  // Add a row to the table
+  // Add row to table
   document.write(
     "<tr><td>" + x + "</td><td>" + operator + "</td><td>" + y + "</td><td>" + result + "</td></tr>"
   );
 }
 
-// Close results table
+// Close table
 document.write("</table>");
 
-// Summary table (2 points)
+// Build summary table
 if (results.length > 0) {
   let min = Math.min(...results);
   let max = Math.max(...results);
