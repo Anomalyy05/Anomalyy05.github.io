@@ -63,7 +63,7 @@ while (true) {
 
   // Add row to table
   document.write(
-    "<tr><td>" + x + "</td><td>" + operator + "</td><td>" + y + "</td><td>" + result + "</td></tr>"
+    "<tr><td>" + x + "</td><td>" + Operator + "</td><td>" + y + "</td><td>" + Result + "</td></tr>"
   );
 }
 
@@ -81,7 +81,7 @@ if (results.length > 0) {
   document.write("<table>");
   document.write("<tr><th>Minimum</th><th>Maximum</th><th>Average</th><th>Total</th></tr>");
   document.write(
-    "<tr><td>" + min + "</td><td>" + max + "</td><td>" + avg.toFixed(2) + "</td><td>" + total + "</td></tr>"
+    "<tr><td>" + Min + "</td><td>" + Max + "</td><td>" + Average.toFixed(2) + "</td><td>" + Total + "</td></tr>"
   );
   document.write("</table>");
 } else {
