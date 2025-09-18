@@ -77,7 +77,7 @@ if (results.length > 0) {
   let total = results.reduce((a, b) => a + b, 0);
   let avg = total / results.length;
 
-  document.write("<h3>Summary of Valid Results</h3>");
+  document.write("<h3>Result Table</h3>");
   document.write("<table>");
   document.write("<tr><th>Minimum</th><th>Maximum</th><th>Average</th><th>Total</th></tr>");
   document.write(
